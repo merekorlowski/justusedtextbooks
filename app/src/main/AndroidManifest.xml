@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.justusedtextbooks.app">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Just Used Textbooks"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="Log in"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="Just Used Textbooks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddBookActivity"
+            android:label="Add Book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.BookActivity"
+            android:label="View Book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:label="Contact Us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.TermsOfUseActivity"
+            android:label="Terms Of Use"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PasswordRecoveryActivity"
+            android:label="Password Recovery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.EditBookActivity"
+            android:label="Edit Book"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
